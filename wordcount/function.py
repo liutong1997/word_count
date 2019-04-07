@@ -20,3 +20,5 @@ def count(request):
                   {'len_count':len_count,'usercount':usercount,
                    'wordcount':word_count,'sorted':sor_d})
 
+def about(request):
+    return render(request,'about.html')
