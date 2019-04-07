@@ -1,3 +1,8 @@
-<h1>count_solution,the number of count:{{len_count}}</h1>
+﻿<h1>count_solution,the number of count:{{len_count}}</h1>
 <h2>your text:</h2>
 {{usercount}}
+<br />
+{% for word,count in sorted %}
+{{ word }}--{{ count }}
+<br />
+{% endfor %}
